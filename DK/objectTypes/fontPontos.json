@@ -1,0 +1,21 @@
+{
+	"name": "fontPontos",
+	"plugin-id": "Spritefont2",
+	"sid": 581685871527313,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 210,
+		"height": 21,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\spritefont.fw.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 190,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

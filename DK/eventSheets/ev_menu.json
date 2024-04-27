@@ -1,0 +1,47 @@
+{
+	"name": "ev_menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 440843475048491,
+					"parameters": {
+						"object": "btn_play",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "btn_play",
+					"sid": 999549653151633,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 199998853022019,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 550682320829974,
+					"parameters": {
+						"layout": "la_game"
+					}
+				}
+			],
+			"sid": 469242165437561
+		}
+	],
+	"sid": 997622233166306
+}

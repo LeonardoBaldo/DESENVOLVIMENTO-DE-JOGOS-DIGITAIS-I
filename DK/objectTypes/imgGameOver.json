@@ -1,0 +1,44 @@
+{
+	"name": "imgGameOver",
+	"plugin-id": "Sprite",
+	"sid": 433095270526154,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 694734678711250
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 440,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\gameover-01.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9260507,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 902754692872556,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

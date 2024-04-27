@@ -1,0 +1,21 @@
+{
+	"name": "imgBackground",
+	"plugin-id": "TiledBg",
+	"sid": 150105596636159,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 2048,
+		"height": 2048,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\bg_layer1.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3749797,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

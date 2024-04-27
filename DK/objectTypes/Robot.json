@@ -1,0 +1,209 @@
+{
+	"name": "Robot",
+	"plugin-id": "Sprite",
+	"sid": 826614103893941,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 576750673352374
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 65,
+						"height": 50,
+						"originX": 0.507692,
+						"originY": 0.5,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8545802,
+						"collisionPoly": {
+							"points": [
+								0.0461538,
+								0.06,
+								0.492308,
+								0,
+								0.969231,
+								0.04,
+								1,
+								0.5,
+								0.969231,
+								0.96,
+								0.492308,
+								1,
+								0.0307692,
+								0.96,
+								0.0153846,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 681573489548132,
+				"name": "parado",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 65,
+						"height": 50,
+						"originX": 0.507692,
+						"originY": 0.5,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2610686,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.96,
+								0,
+								0.96
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 65,
+						"height": 50,
+						"originX": 0.507692,
+						"originY": 0.5,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_2.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7147703,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.97,
+								0.00384615,
+								0.965
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 167250815848664,
+				"name": "andando",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 71,
+						"height": 53,
+						"originX": 0.507042,
+						"originY": 0.509434,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_jump.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4869219,
+						"collisionPoly": {
+							"points": [
+								0.0704225,
+								0.0943396,
+								0.492958,
+								0,
+								0.943662,
+								0.0754717,
+								0.943662,
+								0.924528,
+								0.492958,
+								0.886792,
+								0.056338,
+								0.924528
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 725779434488178,
+				"name": "caindo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 60,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.510638,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_0.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5702155,
+						"collisionPoly": {
+							"points": [
+								0.0333333,
+								0.0425532,
+								0.5,
+								0,
+								0.966667,
+								0.0425532,
+								1,
+								0.489362,
+								0.966667,
+								0.957447,
+								0.5,
+								1,
+								0.0333333,
+								0.957447,
+								0,
+								0.489362
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 231168780323978,
+				"name": "morrendo",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

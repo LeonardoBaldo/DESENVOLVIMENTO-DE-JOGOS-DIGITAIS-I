@@ -1,0 +1,35 @@
+{
+	"name": "ev_splash",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 657868500814079
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 609103608153156,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 648071982940984,
+					"parameters": {
+						"layout": "la_menu"
+					}
+				}
+			],
+			"sid": 510223401622696
+		}
+	],
+	"sid": 808906359879749
+}

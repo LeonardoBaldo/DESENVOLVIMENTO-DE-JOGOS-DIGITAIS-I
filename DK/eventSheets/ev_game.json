@@ -1,0 +1,488 @@
+{
+	"name": "ev_game",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 890196380554315
+		},
+		{
+			"eventType": "variable",
+			"name": "linha",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 263400748230701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 371006432187956
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Robot",
+					"sid": 851195454902868,
+					"parameters": {
+						"animation": "\"caindo\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 316440509625887,
+					"parameters": {
+						"variable": "linha",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 386538978452168,
+					"parameters": {
+						"variable": "linha",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 973972182498013,
+					"parameters": {
+						"variable": "linha",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 740602622143708,
+					"parameters": {
+						"variable": "pontos",
+						"value": "0"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "imgGameOver",
+					"sid": 916053679289724,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "imgPainel",
+						"mode": "position-angle"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "btnMenu",
+					"sid": 302341383218186,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "imgPainel",
+						"mode": "position-angle"
+					}
+				},
+				{
+					"id": "pin-to-object",
+					"objectClass": "btnReStart",
+					"sid": 114932722705004,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "imgPainel",
+						"mode": "position-angle"
+					}
+				}
+			],
+			"sid": 235519149654055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Robot",
+					"sid": 172822285127386,
+					"parameters": {
+						"object": "imgPlataforma"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 560741387093217,
+					"parameters": {
+						"first-value": "Robot.AnimationName",
+						"comparison": 0,
+						"second-value": "\"andando\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Robot",
+					"sid": 848885087200488,
+					"parameters": {
+						"animation": "\"andando\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 635298880435938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 194453593398821
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 110006262831144,
+					"parameters": {
+						"first-value": "Robot.AnimationName",
+						"comparison": 0,
+						"second-value": "\"andando\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 499294284870484,
+					"parameters": {
+						"variable": "linha",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Robot",
+					"sid": 988434276101132,
+					"parameters": {
+						"y": "Self.Y + 70"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Robot",
+					"sid": 410266811628277,
+					"parameters": {
+						"animation": "\"caindo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 782762874921828,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 723985991507159,
+							"parameters": {
+								"variable": "linha",
+								"comparison": 4,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 259507129111254,
+							"parameters": {
+								"variable": "linha",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Robot",
+							"sid": 497699998475598,
+							"parameters": {
+								"y": "150"
+							}
+						}
+					],
+					"sid": 757471895504539
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 649634141558904,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 342126970734624,
+					"parameters": {
+						"object-to-create": "imgObjects",
+						"layer": "\"game\"",
+						"x": "750",
+						"y": "500",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "imgObjects",
+					"sid": 347601081149667,
+					"parameters": {
+						"frame-number": "choose(0,1)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "imgObjects",
+					"sid": 216342314248344,
+					"parameters": {
+						"y": "choose(279,516,751)"
+					}
+				}
+			],
+			"sid": 452086850575123
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "imgObjects",
+					"sid": 313216072959921,
+					"parameters": {
+						"object": "colect"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "imgObjects",
+					"sid": 847946846393321
+				}
+			],
+			"sid": 209964007493566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Robot",
+					"sid": 913814924146450,
+					"parameters": {
+						"object": "imgObjects"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "imgObjects",
+					"sid": 246633363940370,
+					"parameters": {
+						"comparison": 0,
+						"number": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 778278543123823,
+					"parameters": {
+						"variable": "pontos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "imgObjects",
+					"sid": 856674119217952
+				}
+			],
+			"sid": 879073317986816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 255182077300050
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "fontPontos",
+					"sid": 971363807269843,
+					"parameters": {
+						"text": "pontos"
+					}
+				}
+			],
+			"sid": 642406424818854
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Robot",
+					"sid": 410584796140827,
+					"parameters": {
+						"object": "imgObjects"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "imgObjects",
+					"sid": 445848424150301,
+					"parameters": {
+						"comparison": 0,
+						"number": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Robot",
+					"sid": 299340004697644,
+					"parameters": {
+						"animation": "\"morrendo\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "imgObjects",
+					"sid": 276205114355670
+				}
+			],
+			"sid": 430739650495103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 353876483236267
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 586875370566185,
+					"parameters": {
+						"first-value": "Robot.AnimationName",
+						"comparison": 0,
+						"second-value": "\"morrendo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "imgObjects",
+					"sid": 389435357807449,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "imgPainel",
+					"sid": 409874910821024,
+					"parameters": {
+						"y": "lerp(Self.Y,420,0.1)"
+					}
+				}
+			],
+			"sid": 726246909592037
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 591425310341673,
+					"parameters": {
+						"object": "btnMenu",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 974180056239388,
+					"parameters": {
+						"layout": "la_menu"
+					}
+				}
+			],
+			"sid": 622227838964815
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 508189533337476,
+					"parameters": {
+						"object": "btnReStart",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 172135097347796
+				}
+			],
+			"sid": 269511535819794
+		}
+	],
+	"sid": 463263729685144
+}

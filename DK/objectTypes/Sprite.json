@@ -1,0 +1,54 @@
+{
+	"name": "Sprite",
+	"plugin-id": "Sprite",
+	"sid": 864824403022513,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 71,
+						"height": 53,
+						"originX": 0.507042,
+						"originY": 0.509434,
+						"originalSource": "C:\\maciel\\Maciel Business - Udemy\\Curso 0 - free - Mini Game Tap - Construct 2\\assets\\robot_jump.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4396005,
+						"collisionPoly": {
+							"points": [
+								0.0704225,
+								0.0943396,
+								0.492958,
+								0,
+								0.943662,
+								0.0754717,
+								0.943662,
+								0.924528,
+								0.492958,
+								0.886792,
+								0.056338,
+								0.924528
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 856011999410187,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
