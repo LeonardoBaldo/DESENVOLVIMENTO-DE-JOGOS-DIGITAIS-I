@@ -19,3 +19,16 @@ Registros no banco de dados
 V Link do jogo V
 
 [driftking-leonardob.netlify.app](https://driftking-leonardob.netlify.app/)
+
+-------------------------------------------------------------------------------------------
+
+
+[X] Game funcional com qualquer temática desenvolvido no Construct 3.
+[] O game deverá estar hospedado e online podendo ser jogado pelo navegador.
+[] Esse game deverá salvar alguma informação no Banco de Dados Firebase
+Dentro do README do Github deverá constar:
+
+[X] Descrição do game e instruções para jogabilidade
+[X] Link do jogo funcionando
+[X] Prints de telas do Jogo
+[X] Prints do Banco de Dados
