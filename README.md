@@ -15,3 +15,7 @@ Game Over
 
 Registros no banco de dados
 ![DB](https://github.com/LeonardoBaldo/DESENVOLVIMENTO-DE-JOGOS-DIGITAIS-I/assets/79682245/c1f6e875-db39-4879-81e6-0c49a8a8c06b)
+
+V Link do jogo V
+
+driftking-leonardob.netlify.app
